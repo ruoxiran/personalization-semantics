@@ -18,8 +18,57 @@ jobs:
           VALIDATE_MARKUP: false
       - uses: w3c/spec-prod@v2
         with:
-          SOURCE: content/**
-          DESTINATION: content/**
+          SOURCE: content/index.html
+          DESTINATION: content/index.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content/action.html
+          DESTINATION: content/action.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content/destination.html
+          DESTINATION: content/destination.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content/distraction.html
+          DESTINATION: content/distraction.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content/purpose.html
+          DESTINATION: content/purpose.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content/simplification.html
+          DESTINATION: content/simplification.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content/symbol.html
+          DESTINATION: content/symbol.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content/terms.html
+          DESTINATION: content/terms.html
           TOOLCHAIN: respec
           GH_PAGES_BRANCH: gh-pages
           VALIDATE_MARKUP: false
